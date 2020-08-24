@@ -1,0 +1,68 @@
+.btn_group {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+}
+
+.button_social {
+  padding: 0 8px;
+  opacity: 0.5;
+  display: inline-block;
+}
+.button_social:hover, .button_social:focus-within {
+  position: relative;
+  top: -2px;
+  opacity: 1;
+}
+
+.svg_facebook {
+  width: 24px;
+  height: 24px;
+}
+.svg_instagram {
+  width: 24px;
+  height: 24px;
+}
+.svg_whatsapp {
+  width: 23px;
+  height: 23px;
+}
+
+.svg_facebook:hover, .svg_facebook:focus-within {
+  fill: #3b5998;
+  /* fill: #3b5898a9; */
+  opacity: 1;
+  cursor: pointer;
+}
+
+.svg_instagram:hover, .svg_instagram:focus-within {
+  fill: #e4405f;
+  /* fill: #e4405ebd; */
+  opacity: 1;
+  cursor: pointer;
+}
+
+.svg_whatsapp:hover, .svg_whatsapp:focus-within {
+  fill: #25d366;
+  /* fill: #25d365b7; */
+  opacity: 1;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .svg_facebook {
+    width: 48px;
+    height: 48px;
+  }
+  .svg_instagram {
+    width: 48px;
+    height: 48px;
+  }
+  .svg_whatsapp {
+    width: 48px;
+    height: 48px;
+  }
+  .button_social {
+    padding: 0 10px;
+  }
+}

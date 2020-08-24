@@ -1,0 +1,37 @@
+.bottomRight {
+  position: fixed;
+  bottom: 5px;
+  right: 16px;
+  font-size: 10px;
+  text-align: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0.5;
+}
+.bottomRight:hover, .bottomRight:focus-within {
+  opacity: 1;
+}
+
+
+.whatsappContact:hover, .whatsappContact:focus-within {
+  position: relative;
+  top: -4px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.whatsappContactImg {
+  max-width: 64px;
+  max-height: 640px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .bottomRight{
+    display: none;
+  }
+  .whatsappContactImg {
+    max-width: 32px;
+    max-height: 32px;
+  }
+}
