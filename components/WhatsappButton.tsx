@@ -7,7 +7,7 @@ export default function WhatsappButton() {
       title="Consultar por Whatsapp"
       onClick={()=> window.open("https://wa.me/595981568535?text=Hola!%20Me%20gustaría%20solicitar%20un%20presupuesto.", "_blank")}
     >
-      <img className={styles.whatsappContactImg} src="/images/whatsapp.png" alt="Whatsapp" width="256" height="256"/><br/>
+      <img className={styles.whatsappContactImg} src="/images/whatsapp.png" alt="Whatsapp" width="64" height="64"/><br/>
       <p style={{fontSize: '10px', color: 'white'}}>Consultar por Whatsapp</p>
     </div>
   )
