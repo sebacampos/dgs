@@ -6,7 +6,7 @@ export default function Layout({ children, title, description }) {
       <Head>
         <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=GTM-NPN882Q"
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GTM_ID}`}
         />
 
         <script
@@ -15,7 +15,7 @@ export default function Layout({ children, title, description }) {
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', 'GTM-NPN882Q');
+                gtag('config', '${process.env.GTM_ID}');
             `,
           }}
         />
